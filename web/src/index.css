@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/public-sans';
+
+/*
+  ScholarSathi: the look of an official circular, made friendly. Navy "ink", cool paper,
+  a marigold highlight for key figures, and stamp colours that only ever mean a verdict.
+*/
+:root {
+  --paper: #f5f6f8;
+  --card: #ffffff;
+  --sunken: #eceef3;
+  --ink: #141b3d;
+  --muted: #5a6280;
+  --line: #dcdfe8;
+  --brand: #2a3a8f;
+  --brand-ink: #ffffff;
+  --gold: #f2b33d;
+  --gold-soft: #fdf0d2;
+  --yes: #1f7a4f;
+  --maybe: #a15c00;
+  --no: #b3261e;
+  --focus: #2563eb;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #0e1120; --card: #161a2e; --sunken: #1d2238; --ink: #e7e9f3; --muted: #9aa1bd; --line: #2a3050;
+    --brand: #8fa2ff; --brand-ink: #0b0f22; --gold: #f2b33d; --gold-soft: #3a2d10;
+    --yes: #5fd39a; --maybe: #f0b45a; --no: #ff8a80; --focus: #8fb4ff; color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --paper: #0e1120; --card: #161a2e; --sunken: #1d2238; --ink: #e7e9f3; --muted: #9aa1bd; --line: #2a3050;
+  --brand: #8fa2ff; --brand-ink: #0b0f22; --gold: #f2b33d; --gold-soft: #3a2d10;
+  --yes: #5fd39a; --maybe: #f0b45a; --no: #ff8a80; --focus: #8fb4ff; color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-card: var(--card);
+  --color-sunken: var(--sunken);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-yes: var(--yes);
+  --color-maybe: var(--maybe);
+  --color-no: var(--no);
+  --font-display: 'Fraunces Variable', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Public Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+html, body, #root { min-height: 100%; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+h1, h2, h3 { text-wrap: balance; }
+.display { font-family: var(--font-display); font-variation-settings: 'opsz' 72, 'SOFT' 50; letter-spacing: -0.015em; }
+
+/* Verdict stamp: rotated, inked border, like an office rubber stamp. */
+.stamp {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  border: 2px solid currentColor; border-radius: 6px; padding: 0.15rem 0.55rem;
+  font-weight: 800; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+/* Key figures in answers and cards get a highlighter mark. */
+mark, .mark { background: linear-gradient(transparent 55%, var(--gold-soft) 55%); color: inherit; padding: 0 0.1em; }
+
+@keyframes rise { from { opacity: 0.4; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.3s ease-out; }
+@media (prefers-reduced-motion: reduce) { .rise { animation: none; } }

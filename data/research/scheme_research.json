@@ -1,0 +1,856 @@
+[
+  {
+    "id": "pm-usp-csss",
+    "name": "PM-USP Central Sector Scheme of Scholarship for College and University Students (CSSS)",
+    "ministry_department": "Ministry of Education, Department of Higher Education",
+    "levels": ["UG", "PG", "integrated/professional degree (not diploma)"],
+    "status": {
+      "value": "active",
+      "evidence": [
+        {"text": "Listed on NSP 'Schemes on NSP' page as 'PM-USP Central Sector Scheme of Scholarship for College and University Students (CSSS)' under Department of Higher Education (page fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"},
+        {"text": "NSP announcement: \"The Portal is open for Academic year 2026-27 from 1'st June 2026 onwards.\"", "source_url": "https://scholarships.gov.in/public/officer-announcements"}
+      ]
+    },
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+    "official_doc_version": "PM-USP CSSS guidelines applicable from academic year 2022-23 onwards (file dated 07-02-2024, 'updated')",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_06022024.pdf", "note": "Earlier upload of same guidelines (06-02-2024); fetch_ok true; same 4.5 lakh / Rs 12,000 terms"},
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/FAQ_DOHE_CSSS.pdf", "note": "Official FAQ (not fetched)"},
+      {"url": "https://megeducation.gov.in/dhte/other_docs/guidelines/Central%20Sector%20Scheme%20of%20Scholarship%20for%20College%20and%20University%20Students.pdf", "note": "SUPERSEDED July 2019 version (Rs 8 lakh ceiling, Rs 10,000 UG). Do NOT ingest as current."}
+    ],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Text layer present; words frequently run together (e.g. 'uptoRs'); no page numbers, cite by section.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/CSSS_GUIDLINES_07022024_updated.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 450000, "quote": "Students with gross parental/family income upto ₹ 4.5 lakh per annum are eligible for scholarship under the scheme.", "quote_verbatim": true, "location": "Section 4(v)"},
+      "categories": {"value": ["any"], "quote": null, "quote_verbatim": false, "location": null, "note": "No caste restriction found. Category-wise reservation within slots not confirmed from the current text."},
+      "gender": {"value": "any", "quote": "50% of scholarships are earmarked for girls", "quote_verbatim": false, "location": "Section 3"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Above 80th percentile of successful candidates in the relevant stream in Class XII (10+2 or equivalent) of the respective board", "quote": "Students who are above 80th percentile of successful candidates in the relevant stream", "quote_verbatim": true, "location": "Section 4(i)"},
+      "course_levels": {"value": ["regular UG degree", "PG", "5-year integrated/professional", "B.Tech/B.E. up to graduation only"], "quote": "Pursuing regular degree courses and not correspondence or distance mode or pursuing Diploma courses;", "quote_verbatim": true, "location": "Section 4(ii)"},
+      "age_limit": {"value": null, "note": "No age limit. 18-25 age group appears only in the slot-allocation formula (Section 3)."},
+      "state_or_region": {"value": "All India; slots allocated to State/Central boards by state population aged 18-25", "location": "Section 3"},
+      "other_conditions": [
+        {"value": "Not availing any other scholarship (incl. state schemes, fee waiver/reimbursement)", "quote": "Students already receiving other scholarships, including state schemes or fee waiver/reimbursement schemes, are not eligible", "quote_verbatim": false, "location": "Section 4(iv)"},
+        {"value": "Institution recognised by AICTE/relevant regulatory body", "location": "Section 4(iii)"},
+        {"value": "Up to 82,000 fresh scholarships per year; stream split Humanities:Science:Commerce", "quote": "distributed amongst pass outs of the Humanities, Science and Commerce streams in the ratio of 3:3:1.", "quote_verbatim": true, "location": "Sections 2-3"},
+        {"value": "Online application only via NSP; credentials verified via DigiLocker; two-level verification (institute, then state)", "location": "Section 6"}
+      ],
+      "benefit": {"value": "Rs 12,000/yr UG (first 3 years); Rs 20,000/yr PG; Rs 20,000/yr in 4th & 5th year of 5-yr integrated/professional; B.Tech/B.E.: Rs 12,000 yrs 1-3, Rs 20,000 yr 4", "quote": "The rate of scholarship is ₹12,000/-per annum at Graduation level for first three years ... ₹20,000/-per annum at Post-Graduation level.", "quote_verbatim": true, "location": "Section 7"},
+      "renewal_conditions": {"value": ">=50% marks in annual exam and >=75% attendance; forfeiture for indiscipline/ragging", "quote": "For renewal of scholarship in each year of study, besides getting at least 50% marks in the Annual Examination", "quote_verbatim": true, "location": "Section 4(viii)"},
+      "application_window": {"value": "NSP; AY 2026-27 portal opened 1 June 2026; student deadline 31 Oct 2026 (per a college copy of the NSP schedule; NSP publishes dates each year)", "location": "Section 6(ii); NSP officer announcements"}
+    },
+    "notes": [
+      "Stream ratio is 3:3:1 in the 2024 text; the superseded 2019 version said 3:2:1.",
+      "From AY 2026-27 NSP says students 'may apply for one merit-based scholarship scheme and one or more welfare-based scholarship schemes' - this may override the 'no other scholarship' clause; confirm before telling users they are ineligible.",
+      "Quotes were extracted by WebFetch from the PDF text layer; spacing in the original is broken."
+    ]
+  },
+  {
+    "id": "pms-sc",
+    "name": "Post Matric Scholarship for Students belonging to Scheduled Castes (PMS-SC)",
+    "ministry_department": "Ministry of Social Justice & Empowerment, Department of Social Justice & Empowerment (Centrally Sponsored; implemented by States/UTs)",
+    "levels": ["post-matric: Class XI-XII", "ITI/polytechnic/diploma", "UG", "PG", "professional degree"],
+    "status": {
+      "value": "active",
+      "evidence": [
+        {"text": "Guidelines cover 2020-21 to 2025-26 (cover: MoSJE, March 2021).", "source_url": "https://sje.gujarat.gov.in/dscw/assets/downloads/gr6_dscw_sje_02092022.pdf"},
+        {"text": "Goa Directorate of Social Welfare press note (14 May 2026) lists 'Post-Matric Scholarship for SC students' among NSP schemes for 2026-27, student deadline 30 Nov 2026.", "source_url": "https://www.goa.gov.in/wp-content/uploads/2026/05/SCHOLARSHIP-SCHEMES-APPLICATIONS.pdf"},
+        {"text": "News (Careers360, 11 Mar 2026): MSJE told a parliamentary panel it plans to raise income ceiling from Rs 2.5 lakh to Rs 4.5 lakh 'beginning next year' and cap fees covered. PROPOSAL ONLY - not found in an official notification.", "source_url": "https://news.careers360.com/post-matric-scholarship-pms-for-sc-rules-change-msje-course-fee-cap-4-5-lakh-income-limit-next-year-social-justice-and-empowerment/amp"}
+      ]
+    },
+    "official_doc_url": "https://socialjustice.gov.in/writereaddata/UploadFile/PMS_for_SCs_Scheme_Guidelines.pdf",
+    "official_doc_version": "Scheme Guidelines for PMS-SC, revised March 2021 (2020-21 to 2025-26)",
+    "alt_doc_urls": [
+      {"url": "https://sje.gujarat.gov.in/dscw/assets/downloads/gr6_dscw_sje_02092022.pdf", "note": "Gujarat SJE-hosted copy of the same MoSJE March 2021 guidelines; clean text layer; fetch_ok true. Recommended for ingestion."},
+      {"url": "https://socialwelfare.goa.gov.in/wp-content/uploads/2024/07/Guidelines-to-post-matric-scholaships-to-the-students-belonging-to-scheduled-castes-for-students-in-India-2020-2021-to-2025-26_0001.pdf", "note": "Goa-hosted scanned copy with OCR; allowance table garbled"}
+    ],
+    "landing_url": "https://socialjustice.gov.in/schemes/25",
+    "apply_url": "https://scholarships.gov.in (or state portal, e.g. MahaDBT, depending on state)",
+    "fetch_ok": false,
+    "fetch_notes": "MoSJE PDF returned no machine-readable text (scanned). The Gujarat-hosted copy of the same guidelines is clean text (fetch_ok true).",
+    "recommended_ingest_url": "https://sje.gujarat.gov.in/dscw/assets/downloads/gr6_dscw_sje_02092022.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "Scholarships will be paid to the students whose parents'/guardians' income from all sources does not exceed Rs. 2,50,000/- (Rupees Two lakh Fifty thousand only) during the last Financial Year.", "quote_verbatim": true, "location": "Section 5.3"},
+      "categories": {"value": ["SC"], "quote": "Only those candidates who belong to Scheduled Castes so specified in relation to the State/Union Territory", "quote_verbatim": true, "location": "Section 5.2"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any", "quote": "Ten percent extra allowances shall be provided for Divyang students.", "quote_verbatim": true, "location": "Note under 7.1 table"},
+      "min_marks": {"value": "No minimum percentage; must have passed Matriculation/Higher Secondary or higher from a recognised board/university", "location": "Section 5.2"},
+      "course_levels": {"value": ["Group 1: degree & PG professional", "Group 2: other professional degree/diploma/certificate", "Group 3: other graduate/PG", "Group 4: post-matric non-degree incl. Class XI-XII, ITI, polytechnic"], "location": "Section 3"},
+      "age_limit": {"value": null, "note": "None found"},
+      "state_or_region": {"value": "Awarded by State/UT where student is permanently settled/domiciled; studies in India only", "location": "socialjustice.gov.in scheme page"},
+      "other_conditions": [
+        {"value": "Indian nationals only", "quote": "The scholarships are open to Nationals of India only.", "quote_verbatim": true, "location": "Section 5.1"},
+        {"value": "No limit on number of children per family", "quote": "All the children of any parent/guardian will be entitled to receive benefits of the scheme.", "quote_verbatim": true, "location": "Section 5.7"},
+        {"value": "Cannot hold another scholarship/stipend", "quote": "A scholarship holder under this scheme will not hold any other scholarship/stipend.", "quote_verbatim": true, "location": "Section 5.8"},
+        {"value": "Not eligible for a second course at the same stage", "quote": "Candidates who, after passing one stage of education are studying in the same stage of education in a different subject", "quote_verbatim": true, "location": "Section 5.5"},
+        {"value": "Correspondence/online students eligible", "quote": "Students, who pursue their studies through correspondence/online courses, are also eligible.", "quote_verbatim": true, "location": "Section 5.6"},
+        {"value": "Funding 60:40 Centre:State (90:10 NE States)", "quote": "There will be a 60: 40 sharing ratio between the Centre and States (90:10 in case of North Eastern States)", "quote_verbatim": true, "location": "Section 10.1"}
+      ],
+      "benefit": {"value": "Compulsory non-refundable fees (incl. tuition as fixed by State fee committee) + annual academic allowance: Group 1 Rs 13,500 hostellers / Rs 7,000 day scholars; Group 2 Rs 9,500 / 6,500; Group 3 Rs 6,000 / 3,000; Group 4 Rs 4,000 / 2,500", "quote": "Compulsory non-refundable fees including tuition fee, as fixed by the Fee Fixation/Rationalization Committee of the State Government", "quote_verbatim": true, "location": "Section 7.1(i)-(ii); table values read in column order from flattened table - verify against PDF"},
+      "renewal_conditions": {"value": "Payable to course completion subject to satisfactory performance and 75% attendance each year; renewals automatic", "quote": "The award once made will be payable up to the completion of the course subject to satisfactory academic performance and attendance of 75% in every academic year", "quote_verbatim": true, "location": "Section 12.1"},
+      "application_window": {"value": "Apply on portal on day of admission (Freeship card before admission); state-specific deadlines, e.g. Goa 2026-27: 30 Nov 2026; Punjab 2026-27: 1 Jul-15 Nov 2026", "quote": "The institutions shall ensure that all students admitted to their institution", "quote_verbatim": true, "location": "Section 9.1 (continues: apply on IT portal on the day of admission)"}
+    },
+    "notes": [
+      "Guideline period ends 2025-26, but the scheme is running for 2026-27 (Goa notice, Punjab launch). No new guideline document for 2026-27 was found; watch for a revision raising the ceiling to Rs 4.5 lakh (proposal reported March 2026, unconfirmed).",
+      "Allowance table values come from a flattened PDF table matched by order; check before showing exact rupee amounts."
+    ]
+  },
+  {
+    "id": "pm-yasasvi-pms-obc-ebc-dnt",
+    "name": "PM YASASVI - Post-Matric Scholarship for OBC, EBC and DNT Students",
+    "ministry_department": "Ministry of Social Justice & Empowerment, Department of Social Justice & Empowerment (Backward Classes); Centrally Sponsored",
+    "levels": ["post-matric: Class XI-XII", "ITI/polytechnic", "UG", "PG", "professional"],
+    "status": {
+      "value": "active",
+      "evidence": [
+        {"text": "Umbrella PM-YASASVI guidelines cover '(2021-2022 to 2025-26)'.", "source_url": "https://scholarships.gov.in/public/schemeGuidelines/PRE_MATRIC_OBC_GUIDELINES.pdf"},
+        {"text": "Goa DoSW press note 14 May 2026 lists 'Post-Matric Scholarship for OBC/EBC/DNT students (PM YASASVI)' for 2026-27 on NSP.", "source_url": "https://www.goa.gov.in/wp-content/uploads/2026/05/SCHOLARSHIP-SCHEMES-APPLICATIONS.pdf"},
+        {"text": "Manipur OBC/SC directorate, 30 Apr 2026: 39,262 students selected under PM YASASVI Post-Matric for 2025-26.", "source_url": "https://manipurobcsc.mn.gov.in/2026/04/"}
+      ]
+    },
+    "official_doc_url": "https://scholarships.gov.in//public/schemeGuidelines/HP_state_scheme/Centrally%20Sponsored%20Scheme%20of%20Post%20Matric%20Scholarship%20Scheme%20for%20OBC_scheme.pdf",
+    "official_doc_version": "PM-YASASVI (2021-22 to 2025-26), Section 12(B) Centrally Sponsored Scheme of Post-Matric Scholarship for OBC, EBC and DNT Students",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/PRE_MATRIC_OBC_GUIDELINES.pdf", "note": "Umbrella PM-YASASVI doc on NSP; WebFetch extracted only Part A (pre-matric) in detail"},
+      {"url": "https://socialwelfare.goa.gov.in/wp-content/uploads/2024/07/PM-Young-achievers-Scholarship-award-scheme-for-vibrant-India-for-OBCs-and-others-PM-YASASVI-2021-22-to-2025-56.pdf", "note": "Full umbrella guidelines (all parts) hosted by Goa; OCR text with errors; 115k chars"}
+    ],
+    "landing_url": "https://socialjustice.gov.in",
+    "apply_url": "https://scholarships.gov.in (or state portal)",
+    "fetch_ok": true,
+    "fetch_notes": "Clean text with minor OCR errors.",
+    "recommended_ingest_url": "https://scholarships.gov.in//public/schemeGuidelines/HP_state_scheme/Centrally%20Sponsored%20Scheme%20of%20Post%20Matric%20Scholarship%20Scheme%20for%20OBC_scheme.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "does not exceed Rs. 2.50 lakh per annum", "quote_verbatim": true, "location": "Clause 5(xv) (parents'/guardians' income, unemployed students); 5(xiv) for employed students' combined income; 6.1"},
+      "categories": {"value": ["OBC", "EBC", "DNT"], "quote": "Indian nationals from OBC, EBC and DNT groups as notified", "quote_verbatim": false, "location": "Clause 5(i)"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "No minimum percentage; must have passed Matriculation/Higher Secondary or higher", "location": "Clause 5(iii)"},
+      "course_levels": {"value": ["Group 1: degree/PG professional", "Group 2: other professional", "Group 3: other graduate/PG", "Group 4: post-matric non-degree (XI-XII, ITI, polytechnic)"], "location": "Section 3"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "Awarded via State/UT of domicile"},
+      "other_conditions": [
+        {"value": "CA/ICWA/CS/CFA students treated as day scholars; correspondence/online students not eligible for academic allowance", "location": "Note 1 under 7.1"},
+        {"value": "Umbrella 'Other conditions' (Section 16, Part A text): only two boys of same parents eligible (not applicable to girls); 30% beneficiaries reserved for girls; >=5% for students with disabilities - confirm these apply to the post-matric part", "quote": "Only two boys of the same parents/guardian will be entitled to receive scholarships.", "quote_verbatim": true, "location": "Section 16.4 of umbrella doc"}
+      ],
+      "benefit": {"value": "Annual: Group 1 Rs 10,000 academic allowance + Rs 10,000 tuition = Rs 20,000; Group 2 Rs 8,000 + 5,000 = 13,000; Group 3 Rs 6,000 + 2,000 = 8,000; Group 4 Rs 5,000 + 0 = 5,000", "location": "Section 7.1 table", "quote_verbatim": false},
+      "renewal_conditions": {"value": "Payable to course completion subject to satisfactory performance and 75% attendance (Aadhaar-based); automatic on promotion", "quote": "subject to satisfactory academic performance and attendance of 75% in every academic year", "quote_verbatim": true, "location": "Section 11.1; 16(h): \"The renewals should be automatic based on promotion to the next class\""},
+      "application_window": {"value": "NSP/state portals; 2026-27 example: Goa deadline 30 Nov 2026"}
+    },
+    "notes": [
+      "Old pre-YASASVI PMS-OBC (Rs 1 lakh ceiling) material exists on socialjustice.gov.in (e.g. PostMatricOBC10818.pdf is an evaluation study) - do not ingest as rules.",
+      "Guideline period ends 2025-26; scheme still operating in 2026-27 per state notices; no newer guideline found."
+    ]
+  },
+  {
+    "id": "pm-yasasvi-top-class-school",
+    "name": "PM YASASVI - Top Class Education in Schools for OBC, EBC and DNT Students",
+    "ministry_department": "Ministry of Social Justice & Empowerment (Backward Classes); Central Sector",
+    "levels": ["Class IX-XII (school)"],
+    "status": {"value": "active", "evidence": [{"text": "Listed on NSP 'Schemes on NSP' (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf",
+    "official_doc_version": "Undated; 'Central Sector Scheme of Top Class Education in Schools for OBC, EBC and DNT Students'",
+    "alt_doc_urls": [{"url": "https://socialjustice.gov.in/writereaddata/UploadFile/21871689329535.pdf", "note": "MoSJE PM YASASVI page (2023) referring to YASASVI Entrance Test YET-2023; older selection mode"}],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Readable with OCR errors (e.g. 'Rs. 75,0001').",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/3061_G.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "household annual income of less than Rs. 2.5 lakhs would be eligible for the scheme", "quote_verbatim": true, "location": "Section 2", "note": "Strictly 'less than' 2.5 lakh"},
+      "categories": {"value": ["OBC", "EBC", "DNT"], "quote": "All the OBC, EBC and DNT students studying in the Top Class Schools identified as per the modalities of the scheme", "quote_verbatim": true, "location": "Section 2"},
+      "gender": {"value": "any", "quote": "At least 30% of these scholarships are reserved for girls", "quote_verbatim": true, "location": "Section 3(d)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Merit list on marks of final exam of previous class; no fixed cut-off stated", "location": "Sections 3(e), 3(g)"},
+      "course_levels": {"value": ["Class 9-12 in identified Top Class Schools"], "location": "Section 1"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "State-wise slots allocated by OBC population; announced each April", "location": "Sections 2, 3(c)"},
+      "other_conditions": [
+        {"value": "No assistance under other Govt schemes for same purposes", "quote": "Students studying in schools assisted under this Scheme shall not be eligible for assistance under any other scheme", "quote_verbatim": true, "location": "Section 7(iii)"}
+      ],
+      "benefit": {"value": "Up to Rs 75,000/yr (Class 9-10) and Rs 1,25,000/yr (Class 11-12) for tuition, hostel and other school charges", "quote": "maximum of Rs. 75,000/- per annum per student of class 9 and 10 and Rs. 1,25,000/- per annum per student of class 11 and 12", "quote_verbatim": true, "location": "Section 6(ii)"},
+      "renewal_conditions": {"value": null, "note": "No explicit renewal criteria; Ministry may decide continuation (Section 8(iii))."},
+      "application_window": {"value": "NSP; slots announced April; payment before 15 August each year (Section 5(ii))"}
+    },
+    "notes": ["Earlier (2023) selection used the NTA YASASVI Entrance Test (YET); current NSP doc uses previous-class marks. Confirm current mode."]
+  },
+  {
+    "id": "pm-yasasvi-top-class-college",
+    "name": "PM YASASVI - Top Class Education in College for OBC, EBC and DNT Students",
+    "ministry_department": "Ministry of Social Justice & Empowerment (Backward Classes); Central Sector",
+    "levels": ["UG", "PG", "diploma/degree at notified institutions"],
+    "status": {"value": "active", "evidence": [{"text": "Listed on NSP 'Schemes on NSP' (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/ApprovedmodifieddraftofTopClassCollege.pdf",
+    "official_doc_version": "Central Sector Scheme of Top Class Education in College for OBC, EBC and DNT Students, as amended from 2023-24",
+    "alt_doc_urls": [],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Readable; minor OCR glitches.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/ApprovedmodifieddraftofTopClassCollege.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "total annual family income from all sources up to Rs. 2.50 lakh", "quote_verbatim": true, "location": "Section 3(i)"},
+      "categories": {"value": ["OBC", "EBC", "DNT"]},
+      "gender": {"value": "any", "quote": "Thirty percent (30%) of slots allotted to the Institution shall be reserved for eligible girl students.", "quote_verbatim": true, "location": "Section 3(iv)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Admission to a notified full-time course at a listed institution; no separate cut-off", "location": "Section 3"},
+      "course_levels": {"value": ["full-time courses at IIMs/IITs/IIITs/AIIMS/NITs/NIFTs/NIDs and other NAAC/NIRF/INI-listed institutions"], "quote": "All the IIMs / IITs/ IIITs / AIIMSs/ NITs/NIFTs/ NIDs", "quote_verbatim": true, "location": "Section 4(i)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Max two siblings per family (affidavit)", "location": "Section 3(vi)"},
+        {"value": "Terminated if not promoted", "location": "Section 3(vii)"},
+        {"value": "Fresh slots capped by annual budget", "location": "Section 4(iii)"}
+      ],
+      "benefit": {"value": "Full tuition & non-refundable charges (cap Rs 2 lakh/yr at private institutions); Rs 3,000/month living expenses; Rs 5,000/yr books; one-time laptop up to Rs 45,000", "quote": "limited to Rs.45000/- per student as one time assistance during the course", "quote_verbatim": true, "location": "Section 5(i)"},
+      "renewal_conditions": {"value": "Continues to completion subject to satisfactory performance; must reapply every year", "quote": "The students are required to apply for scholarship every year even in case of renewal also.", "quote_verbatim": true, "location": "Section 2(ii)"},
+      "application_window": {"value": "NSP annual cycle (2026-27 portal opened 1 June 2026)"}
+    },
+    "notes": []
+  },
+  {
+    "id": "top-class-education-sc",
+    "name": "Central Sector Scholarship Scheme of Top Class Education for SC Students",
+    "ministry_department": "Ministry of Social Justice & Empowerment, Department of Social Justice & Empowerment",
+    "levels": ["UG", "PG", "diploma/degree at notified institutions"],
+    "status": {"value": "active", "evidence": [{"text": "Guidelines period FY 2021-22 to 2025-26; still listed on NSP 'Schemes on NSP' (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"}]},
+    "official_doc_url": "https://socialjustice.gov.in/writereaddata/UploadFile/Top%20Class%20Education%20for%20SC%20Students_2021_22637744907806702333.pdf",
+    "official_doc_version": "Top Class Scholarship for SC Students, FY 2021-22 to 2025-26",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018.pdf", "note": "Older 2018 version that NSP still links; superseded"},
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/Top_Class_Education_Scheme_2018_FAQ.pdf", "note": "2018 FAQ"}
+    ],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Readable; tables (institution slot lists) scrambled.",
+    "recommended_ingest_url": "https://socialjustice.gov.in/writereaddata/UploadFile/Top%20Class%20Education%20for%20SC%20Students_2021_22637744907806702333.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "total annual family income from all sources up to Rs. 8.00 lakh", "quote_verbatim": true, "location": "Section 2(a)"},
+      "categories": {"value": ["SC"]},
+      "gender": {"value": "any", "quote": "Thirty percent (30%) of slots allotted to the Institution shall be reserved for eligible SC girl students", "quote_verbatim": true, "location": "Section 2(d)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Admission to notified institution; merit within institution slots"},
+      "course_levels": {"value": ["full-time courses at IIMs/IITs/IIITs/AIIMS/NITs/NIFTs/NIDs and NAAC A++/A+, NIRF top-100, INI institutions"], "quote": "All the IIMs / IITs/ IIITs / AIIMSs/ NITs/NIFTs/ NIDs/", "quote_verbatim": true, "location": "Section 3(a)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Max 2 siblings per family", "quote": "The benefit of the Scheme will not be provided to more than 2 siblings in a family.", "quote_verbatim": true, "location": "Section 2(f)"},
+        {"value": "No other scholarship", "quote": "The selected candidate shall be precluded from availing any other scholarship benefits", "quote_verbatim": true, "location": "Section 9"},
+        {"value": "Overall cap 21,500 scholarships for 2021-22 to 2025-26 (fresh slots 1,500 rising to 1,900)", "quote": "The overall number of scholarships would be capped at 21,500 for the period 2021-22 to 2025-26.", "quote_verbatim": true, "location": "Section 3(c)"}
+      ],
+      "benefit": {"value": "Full tuition & non-refundable fees (cap Rs 2 lakh/yr private institutions); academic allowance Rs 86,000 first year, Rs 41,000 subsequent years (covers living expenses, books, stationery, computer)", "quote": "there will be a ceiling of Rs. 2.00 lakh per annum per student for private sector institutions", "quote_verbatim": true, "location": "Section 4(a)"},
+      "renewal_conditions": {"value": "Continues to course completion subject to satisfactory performance; terminated if not promoted", "quote": "The scholarship will be terminated if the student fails to get promoted to the next semester/class.", "quote_verbatim": true, "location": "Sections 1(c), 2(g)"},
+      "application_window": {"value": "NSP; institution verification by 31 October each year", "quote": "shall be 31st of October every year", "quote_verbatim": true, "location": "Section 5(b)-(c)"}
+    },
+    "notes": ["Period ends 2025-26; no newer guideline found though scheme is still on NSP."]
+  },
+  {
+    "id": "nmmss",
+    "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "ministry_department": "Ministry of Education, Department of School Education & Literacy",
+    "levels": ["Class IX-XII (selection test in Class VIII)"],
+    "status": {
+      "value": "active",
+      "evidence": [
+        {"text": "Listed on NSP 'Schemes on NSP' (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"},
+        {"text": "News: NMMSS 2026-27 applications on NSP, deadline extended (to 30 Sep, then 31 Oct 2026).", "source_url": "https://news.careers360.com/nmmss-2026-27-scholarship-scheme-education-ministry-extends-deadline-applications-september-30-meritorious-students-govt-schools/amp"}
+      ]
+    },
+    "official_doc_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+    "official_doc_version": "NMMSS guidelines (undated; 'in operation for 5 years beyond March 2021')",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/NMMSSGuidelines.pdf", "note": "NSP copy; OCR text with garbled digits (e.g. '{ 120001'); prefer DoSEL copy"},
+      {"url": "https://scholarships.gov.in/public/FAQ/NMSSS_FAQ.pdf", "note": "NSP FAQ (not fetched)"}
+    ],
+    "landing_url": "https://dsel.education.gov.in/scheme/nmmss",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "DoSEL PDF has clean text. Landing page redirects to www.dsel-education.gov.in and is JS-rendered (no text).",
+    "recommended_ingest_url": "https://dsel.education.gov.in/sites/default/files/NMMSS_Guidelines_22.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 350000, "quote": "whose parental income is not more than ₹ 3,50,000/- per annum", "quote_verbatim": true, "location": "Section 1.1"},
+      "categories": {"value": ["any"], "note": "Reservation as per State/UT norms (Section 1.1)"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "55% in Class VII (5% relaxation SC/ST) to sit the test; MAT and SAT each passed with >=40% aggregate (32% SC/ST); 55% in Class VIII (5% relaxation SC/ST)", "quote": "minimum of 55 % marks or equivalent grade in Class VII examination", "quote_verbatim": true, "location": "Sections 2.2, 3.1, 3.2"},
+      "course_levels": {"value": ["Class IX", "Class X", "Class XI", "Class XII"], "location": "Section 1.2 (max 4 years)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "State/UT quota; selection test conducted by each State/UT (November each year)", "location": "Section 7.0"},
+      "other_conditions": [
+        {"value": "Only regular students of Government, Govt-aided and local body schools; KVs, JNVs, Govt residential schools and private schools excluded", "quote": "Kendriya Vidyalayas and Jawahar Navodaya Vidyalayas", "quote_verbatim": true, "location": "Section 1.2"}
+      ],
+      "benefit": {"value": "Rs 12,000 per annum (Rs 1,000/month)", "quote": "₹ 12000/- per annum @ ₹1000 per month", "quote_verbatim": true, "location": "Section 1.3"},
+      "renewal_conditions": {"value": "Clear promotion in first attempt (IX->X, XI->XII); >=60% in Class X (5% relaxation SC/ST) to continue into XI; must renew on NSP in time", "quote": "minimum of 60% marks in Class X", "quote_verbatim": true, "location": "Sections 4.3, 4.4, 6.4, 6.5"},
+      "application_window": {"value": "Test in November of Class VIII; NSP applications typically Jun/Jul-Oct (2026-27 deadline extended to 31 Oct 2026 per news)"}
+    },
+    "notes": ["Guideline says scheme runs '5 years beyond March 2021' (to ~March 2026); no official continuation order found, but 2026-27 applications are open on NSP."]
+  },
+  {
+    "id": "aicte-pragati",
+    "name": "AICTE Pragati Scholarship Scheme for Girl Students (Technical Degree & Diploma)",
+    "ministry_department": "Ministry of Education / All India Council for Technical Education (AICTE)",
+    "levels": ["UG technical degree", "technical diploma"],
+    "status": {
+      "value": "active",
+      "evidence": [
+        {"text": "AICTE notification dated 19.06.2026 (forwarded by Kerala DTE circular 06-07-2026): fresh 2026-27 applications on NSP; last date 31/10/2026; INO verification 15/11/2026; SNO 30/11/2026.", "source_url": "https://dtekerala.gov.in/static/DEPTCIRCULARS/notification-aicte.pdf"}
+      ]
+    },
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+    "official_doc_version": "Guidelines for AICTE - Pragati Scholarship Scheme for Girl Students (Degree) 2020-21, July 2020 (current NSP link)",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2011_G.pdf", "note": "Diploma version on NSP (not fetched in detail)"},
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_F.pdf", "note": "Degree FAQ"},
+      {"url": "https://www.aicteindia.org/sites/default/files/stdc/Pragati/AICTE%20Pragati%20Scheme%20Guidelines_Degree.pdf", "note": "Likely latest AICTE-hosted guideline (URL reconstructed from garbled text in AICTE 18.06.2025 notice); WebFetch blocked by robots.txt - unverified"},
+      {"url": "https://aicte.gov.in/sites/default/files/pragatisaksham.pdf", "note": "OBSOLETE old scheme (Rs 30,000 tuition + Rs 2,000/month). Do NOT ingest."}
+    ],
+    "landing_url": "https://www.aicte-india.org/schemes/students-development-schemes",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "NSP PDF clean text. aicteindia.org guideline PDFs blocked by robots.txt; aicte.gov.in PDFs returned client errors.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2010_G.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "Family income from all sources should not be more than Rs. 8 lakh per annum during the current financial year.", "quote_verbatim": true, "location": "Section 2.0(3)"},
+      "categories": {"value": ["any"], "note": "Reservation as per GoI norms; unfilled SC/ST/OBC seats go to General (Section 9.0)"},
+      "gender": {"value": "female"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Merit on qualifying exam marks (10+2 for degree); ties by Class 10 marks, then age", "quote": "The selection of candidate will be carried out solely on the basis of merit of qualifying examination.", "quote_verbatim": true, "location": "Sections 7.0(1), 8.0"},
+      "course_levels": {"value": ["1st year of AICTE-approved degree (or 2nd year via lateral entry)", "diploma (separate guideline)"], "quote": "The girl candidate should be admitted to First year of Degree level course", "quote_verbatim": true, "location": "Section 2.0(1)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India; state-wise distribution (Annexure A); extra awards for eligible girls from 13 specified UTs/NE states"},
+      "other_conditions": [
+        {"value": "Max two girl children per family", "quote": "Maximum two girl child per family are eligible.", "quote_verbatim": true, "location": "Section 2.0(2)"},
+        {"value": "Must not receive other financial assistance (else refund)", "quote": "The grant of scholarship is subject to the condition that the student does not receive any financial assistance.", "quote_verbatim": true, "location": "Section 11.0(6)"},
+        {"value": "5,000 scholarships per annum (degree); AICTE page says 10,000 Pragati awards in total", "quote": "A total of 5,000 scholarships are earmarked per annum under this scheme.", "quote_verbatim": true, "location": "Section 3.0(1)"}
+      ],
+      "benefit": {"value": "Rs 50,000 per annum lump sum, up to 4 years (3 for lateral entry)", "quote": "Rs. 50,000/- per annum for every year of study", "quote_verbatim": true, "location": "Section 4.0(1)"},
+      "renewal_conditions": {"value": "Renewal on NSP with pass certificate/marksheet; forfeited if not promoted", "quote": "The scholarship will be renewed for the next year of study", "quote_verbatim": true, "location": "Section 10.0"},
+      "application_window": {"value": "NSP, roughly June-31 Oct (2026-27: last date 31 Oct 2026)"}
+    },
+    "notes": ["Guideline text on NSP is the 2020-21 edition; amounts and limits match AICTE's current scheme page (Rs 50,000) but a newer AICTE-hosted edition may exist and could not be fetched."]
+  },
+  {
+    "id": "aicte-saksham",
+    "name": "AICTE Saksham Scholarship Scheme for Specially-Abled Students (Technical Degree & Diploma)",
+    "ministry_department": "Ministry of Education / AICTE",
+    "levels": ["UG technical degree", "technical diploma"],
+    "status": {"value": "active", "evidence": [{"text": "AICTE notification 19.06.2026 covers Saksham 2026-27; deadline 31 Oct 2026.", "source_url": "https://dtekerala.gov.in/static/DEPTCIRCULARS/notification-aicte.pdf"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+    "official_doc_version": "Guidelines for AICTE - Saksham Scholarship Scheme (Degree), July 2020 / 2020-21",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2013_G.pdf", "note": "Diploma version"},
+      {"url": "https://www.aicteindia.org/sites/default/files/stdc/AICTE%20Saksham%20Scheme%20Guidelines_Degree.pdf", "note": "AICTE-hosted (robots-blocked; unverified)"}
+    ],
+    "landing_url": "https://www.aicte-india.org/schemes/students-development-schemes",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Clean text.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_2012_G.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "Family income from all sources should not be more than Rs. 8 lakh per annum during the current financial year.", "quote_verbatim": true, "location": "Section 2.0(3)"},
+      "categories": {"value": ["any"]},
+      "gender": {"value": "any"},
+      "disability": {"value": true, "quote": "Specially-abled student, having disability of not less than 40%.", "quote_verbatim": true, "location": "Section 2.0(2)"},
+      "min_marks": {"value": null, "note": "No cut-off; all eligible applicants awarded (Section 3.0)"},
+      "course_levels": {"value": ["1st year degree or 2nd year lateral entry at AICTE-approved institution", "diploma (separate guideline)"], "location": "Section 2.0(1)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "No numerical cap", "quote": "All eligible specially-abled student admitted to First year of Degree level course OR Second year", "quote_verbatim": true, "location": "Section 3.0"},
+        {"value": "Gap between qualifying exam and admission <= 2 years", "location": "Section 8.1"},
+        {"value": "Other financial assistance -> discontinuation and refund", "location": "Section 8.5"}
+      ],
+      "benefit": {"value": "Rs 50,000/yr, up to 4 years (3 for lateral entry); no separate hostel/medical grant", "quote": "Rs. 50,000/- per annum for every year of study", "quote_verbatim": true, "location": "Section 4.0(1)"},
+      "renewal_conditions": {"value": "Pass certificate + HoI letter on NSP; forfeited if not promoted or dropout", "quote": "If a candidate failed/ drop out in subsequent year, she/ he will not be eligible for further scholarship.", "quote_verbatim": true, "location": "Sections 7.0, 8.4"},
+      "application_window": {"value": "NSP, to 31 Oct (2026-27)"}
+    },
+    "notes": []
+  },
+  {
+    "id": "aicte-swanath",
+    "name": "AICTE Swanath Scholarship Scheme (Technical Degree & Diploma)",
+    "ministry_department": "Ministry of Education / AICTE",
+    "levels": ["UG technical degree", "technical diploma"],
+    "status": {"value": "active", "evidence": [{"text": "AICTE notification Ref. Swanath/2026-27 dated 19.06.2026; last date 31.10.2026 (copy hosted by Thapar Institute, not an official domain; same notice is forwarded in the Kerala DTE circular at dtekerala.gov.in/static/DEPTCIRCULARS/notification-aicte.pdf).", "source_url": "https://www.thapar.edu/upload/files/NOTICE-AICTE%20PRAGATI,%20SAKSHAM%20&%20SWANATH%20%202026-27.pdf"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+    "official_doc_version": "AICTE - Swanath Scholarship Scheme for Students, May 2025",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3038_G.pdf", "note": "Diploma listing on NSP"},
+      {"url": "https://aicte.gov.in/sites/default/files/AICTE-SWANATH-%20SCHEME-DEGREE-DIPLOMA.pdf", "note": "AICTE-hosted; fetch failed (client error)"}
+    ],
+    "landing_url": "https://www.aicte-india.org/schemes/students-development-schemes",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Readable; some words run together.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/AICTE/AICTE_3039_G.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "should not be more than Rs. 8 lakh per annum", "quote_verbatim": true, "location": "Section 2.0(2)"},
+      "categories": {"value": ["orphan", "either/both parents died due to Covid-19", "wards of Armed Forces/CAPF martyred in action"], "quote": "Orphan / Either or both parents died due to Covid 19 / Wards of Armed Forces and Central Paramilitary Forces martyred in action (Shaheed)", "quote_verbatim": true, "location": "Section 2.0"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Merit on qualifying exam: % in 10+2 (degree) or Class 10 (diploma)", "quote": "solely on the basis of merit of qualifying examination", "quote_verbatim": true, "location": "Section 5.0"},
+      "course_levels": {"value": ["AICTE-approved degree (1st-4th year)", "AICTE-approved diploma"], "location": "Section 2.0(3)"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Must not hold other Central/State/AICTE scholarship", "quote": "should NOT be Recipient of any of the Central Govt. / State Govt. / AICTE Sponsored scholarships", "quote_verbatim": true, "location": "Section 2.0(4)"},
+        {"value": "Max 2,000 awards/yr (1,000 degree + 1,000 diploma)", "quote": "A maximum of 2000 scholarships (1000 for Degree Students and 1000 for Diploma Students) will be awarded every year.", "quote_verbatim": true, "location": "Section 3.0"}
+      ],
+      "benefit": {"value": "Rs 50,000/yr; max 4 yrs degree, 3 yrs diploma", "quote": "Rs. 50,000.00 per annum for every year of study", "quote_verbatim": true, "location": "Section 4.0"},
+      "renewal_conditions": {"value": "Promotion + bonafide certificate on NSP; forfeit if not promoted or late", "quote": "would forfeit the scholarship", "quote_verbatim": true, "location": "Section 8.0"},
+      "application_window": {"value": "NSP, to 31 Oct (2026-27)"}
+    },
+    "notes": ["Lateral entry not addressed in the Swanath text."]
+  },
+  {
+    "id": "pmss-mha-capf-ar-state-police",
+    "name": "Prime Minister's Scholarship Scheme for wards of CAPFs, Assam Rifles and State Police personnel (MHA)",
+    "ministry_department": "Ministry of Home Affairs (Welfare & Rehabilitation Board)",
+    "levels": ["first professional degree (UG)", "MBA/MCA"],
+    "status": {"value": "active", "evidence": [{"text": "Both PMSS (CAPF & AR) and PMSS (State Police martyred in terror/Naxal attacks) listed on NSP 'Schemes on NSP' (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/All-Scholarships"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/warb/PMSS_Guidelines_1197_3001-2023-24.pdf",
+    "official_doc_version": "PMSS guidelines 2023-24 (current NSP link)",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in//public/schemeGuidelines/MoHA-(WARB)-RevisedGuidelines_PMSS(MHA).pdf", "note": "MHA revised guidelines, AY 2020-21; clean text; fetch_ok true. Recommended text source until 2023-24 PDF is OCR'd."},
+      {"url": "https://scholarships.gov.in/public/FAQ/FAQonPMSSS.pdf", "note": "FAQ (not fetched)"}
+    ],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": false,
+    "fetch_notes": "2023-24 PDF has no text layer (scanned). 2020-21 revised guidelines readable. The user's pipeline should OCR the 2023-24 PDF and diff against 2020-21.",
+    "recommended_ingest_url": "https://scholarships.gov.in//public/schemeGuidelines/MoHA-(WARB)-RevisedGuidelines_PMSS(MHA).pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": null, "note": "No income ceiling specified in 2020-21 text"},
+      "categories": {"value": ["wards/widows of serving/retired CAPF & AR personnel below officer rank", "wards of personnel who died in harness/disabled", "wards of State Police martyred in terror/Naxal attacks"], "quote": "Wards/widows of retired and serving CAPFs & AR Personnel. (Personnel below Officer Rank)", "quote_verbatim": true, "location": "Section 3A(II); 3B"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "60% in Minimum Entry Qualification", "quote": "Having minimum 60% marks in Minimum Entry Qualification (MEQ)", "quote_verbatim": true, "location": "Section 3A(IV)"},
+      "course_levels": {"value": ["first professional degree (BE, B.Tech, BDS, MBBS, B.Ed etc.)", "MBA", "MCA"], "quote": "Only First professional degree courses like BE, B Tech, BDS, MBBS, B.Ed.,", "quote_verbatim": true, "location": "Section 8(B)(I); Appendix I"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Only two children per family", "quote": "This scholarship is admissible for only two children per family", "quote_verbatim": true, "location": "Section 4(IV)"},
+        {"value": "Excluded: wards of civilian employees; those availing other scholarship/stipend; distance learning; study abroad; diploma; master's other than MBA/MCA", "location": "Section 10"},
+        {"value": "2,000 scholarships (CAPF/AR) + 500 (State Police), split equally boys/girls", "location": "Section 2"}
+      ],
+      "benefit": {"value": "Rs 3,000/month girls; Rs 2,500/month boys (paid annually); up to 5 years by course duration", "quote": "Rs. 3000/-per month for girls", "quote_verbatim": true, "location": "Sections 5-6"},
+      "renewal_conditions": {"value": "Pass each year with >=50% marks; one-year grace for delayed renewal", "location": "Sections 3A(IV)-(V), 3B(II)-(III)"},
+      "application_window": {"value": "NSP annual cycle (2026-27 portal open from 1 June 2026)"}
+    },
+    "notes": ["Figures from the 2020-21 revised text; the 2023-24 guideline (scanned) may differ - verify by OCR."]
+  },
+  {
+    "id": "pmss-ksb-ex-servicemen",
+    "name": "Prime Minister's Scholarship Scheme (PMSS) for dependent wards/widows of Ex-Servicemen and Ex-Coast Guard personnel (KSB)",
+    "ministry_department": "Ministry of Defence, Department of Ex-Servicemen Welfare - Kendriya Sainik Board",
+    "levels": ["first professional degree (UG, incl. integrated)", "MBA/MCA"],
+    "status": {"value": "active (latest official document seen: 2024-25 brochure; 2026-27 cycle not verified from an official source)", "evidence": [{"text": "KSB Information Brochure 2024-25 hosted by HP Sainik Welfare Dept.", "source_url": "https://swd.hp.gov.in/wp-content/uploads/2024/08/Information-Brochure-2024-25.pdf"}]},
+    "official_doc_url": "https://swd.hp.gov.in/wp-content/uploads/2024/08/Information-Brochure-2024-25.pdf",
+    "official_doc_version": "PMSS Information Brochure 2024-25 (KSB)",
+    "alt_doc_urls": [
+      {"url": "https://www.ksb.gov.in/pm-scholarship.htm", "note": "KSB site; WebFetch blocked by robots.txt (page existence unverified)"},
+      {"url": "https://dosw.goa.gov.in/?p=1159", "note": "OUTDATED Goa page describing PMSS 2016-17 (Rs 2,000/2,250) - do not ingest"}
+    ],
+    "landing_url": "https://www.ksb.gov.in",
+    "apply_url": "https://online.ksb.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Brochure readable; page numbers inferred.",
+    "recommended_ingest_url": "https://swd.hp.gov.in/wp-content/uploads/2024/08/Information-Brochure-2024-25.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": null, "note": "No income ceiling found"},
+      "categories": {"value": ["dependent wards/widows of ex-servicemen and ex-Coast Guard personnel"], "note": "Wards of civilians incl. paramilitary not eligible (para 3(e))"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "60% in Minimum Educational Qualification (all subjects counted)", "quote": "Students should have scored 60% and above in Minimum Educational Qualification (MEQ)", "quote_verbatim": true, "location": "p.2 para 3(a); p.4 para 10"},
+      "course_levels": {"value": ["first professional degree incl. integrated (BE, B.Tech, MBBS, BBA, etc.)", "MBA/MCA"], "quote": "First professional degree courses including integrated degree courses", "quote_verbatim": true, "location": "p.4 para 8"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Only students admitted to 1st year in current academic year; lateral entry excluded", "quote": "Students who have taken admission in 1st year i.e current academic year (except Lateral entry)", "quote_verbatim": true, "location": "p.2 para 3(a)"},
+        {"value": "5,500 scholarships per year, equal boys/girls", "quote": "A total number of 5500 students will be selected equally for boys & girls", "quote_verbatim": true, "location": "p.2 para 2"},
+        {"value": "Excluded: distance, vocational, study abroad", "location": "p.4 para 8(c)-(d)"}
+      ],
+      "benefit": {"value": "Boys Rs 30,000/yr (Rs 2,500/month); girls Rs 36,000/yr (Rs 3,000/month); 2-5 years", "location": "p.5 para 13", "quote_verbatim": false},
+      "renewal_conditions": {"value": "Clear all subjects in first attempt each year with >=50% marks; renewal docs within one year", "quote": "with minimum 50% marks", "quote_verbatim": true, "location": "p.5 para 13 note; p.6 para 17(h)"},
+      "application_window": {"value": "Apply online soon after admission; student deadline 30 Nov (2024-25 cycle)", "location": "p.6 para 17(a)"}
+    },
+    "notes": ["Separate from MHA PMSS (CAPF). KSB site robots-blocked; confirm 2026-27 amounts/dates on online.ksb.gov.in."]
+  },
+  {
+    "id": "ugc-ishan-uday",
+    "name": "Ishan Uday Special Scholarship Scheme for North Eastern Region (UGC)",
+    "ministry_department": "Ministry of Education / University Grants Commission (UGC)",
+    "levels": ["UG"],
+    "status": {"value": "active", "evidence": [{"text": "UGC notice (reported 1 Aug 2026): NSP to open shortly for NSPG and ISHAN UDAY applications for 2026-27; HEIs to verify within 15 days. Also listed on NSP.", "source_url": "https://news.careers360.com/ugc-to-open-nsp-applications-for-nspg-ishan-uday-scholarships-heis-get-15-day-verification-deadline/amp"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_ISHAN%20UDAY_2324.pdf",
+    "official_doc_version": "UGC guidelines for Ishan Uday (2021 text; NSP file tagged 2023-24)",
+    "alt_doc_urls": [{"url": "https://scholarships.gov.in/public/FAQ/FAQ_Ishanuday.pdf", "note": "FAQ (not fetched)"}],
+    "landing_url": "https://www.ugc.gov.in",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Clean text with page numbers.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_ISHAN%20UDAY_2324.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 450000, "quote": "The income of the parents of the student should be below Rs. 04.50 lakh per annum.", "quote_verbatim": true, "location": "Section 2(IX), p.3", "note": "Strictly below 4.5 lakh"},
+      "categories": {"value": ["any"]},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": null, "note": "No minimum %; ranking by Class XII marks, Class X as tie-breaker (Section 1, p.2)"},
+      "course_levels": {"value": ["first UG degree, regular/full-time only"], "quote": "'Regular/Full Time' mode only", "quote_verbatim": true, "location": "Sections 2(II), 2(VII), pp.2-3"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "Domicile of a North Eastern state AND Class XII from a school in NER", "quote": "Student should have a valid Domicile Certificate of any State of NER.", "quote_verbatim": true, "location": "Sections 2(I), 2(X), pp.2-3"},
+      "other_conditions": [
+        {"value": "Not for students who already hold a degree; no management quota; no ODL/part-time", "quote": "Students gaining admission through 'Management Quota' are not eligible to apply.", "quote_verbatim": true, "location": "Sections 2(IV), 2(VII), 2(VIII)"},
+        {"value": "10,000 scholarships; 50% earmarked for Science/Engg/Medical/Technical/Agri/Forestry", "location": "Section 1, p.2"},
+        {"value": "Must relinquish other scholarships if selected", "location": "Section 4, p.3"}
+      ],
+      "benefit": {"value": "Rs 8,000/month for 10 months/yr for UG duration", "quote": "Ten thousand (10000) Scholarships, at the rate of Rs.8,000/- per month for 10 months in a", "quote_verbatim": true, "location": "Section 1, p.2"},
+      "renewal_conditions": {"value": "Good conduct, attendance, successful completion of year; forfeit if not promoted or course/institution changed", "quote": "Students failing to get promoted to the next class/ level would forfeit the scholarship.", "quote_verbatim": true, "location": "Section 7, pp.4-5"},
+      "application_window": {"value": "Once a year on NSP; results usually Nov/Dec", "location": "Sections 1, 6(I)"}
+    },
+    "notes": []
+  },
+  {
+    "id": "ugc-nspg",
+    "name": "UGC National Scholarship for Post Graduate Studies (NSPG) - successor to PG Indira Gandhi Scholarship for Single Girl Child",
+    "ministry_department": "Ministry of Education / University Grants Commission (UGC)",
+    "levels": ["PG"],
+    "status": {
+      "value": "active (PG Indira Gandhi Single Girl Child scheme: merged into NSPG from AY 2023-24)",
+      "evidence": [
+        {"text": "MoE Lok Sabha USQ 1291 (11-12-2023) annexure footnote: \"These schemes have been merged from the AY 2023-24 into National Scholarship for Post Graduate Studies.\" (covers PG Indira Gandhi Single Girl Child, PG University Rank Holders, PG SC/ST Professional).", "source_url": "https://education.gov.in/sites/upload_files/mhrd/files/parliament_annexure_en/lsuq.pdf"},
+        {"text": "UGC notice reported 1 Aug 2026 on NSP opening for NSPG 2026-27.", "source_url": "https://news.careers360.com/ugc-to-open-nsp-applications-for-nspg-ishan-uday-scholarships-heis-get-15-day-verification-deadline/amp"}
+      ]
+    },
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_NATIONAL_SCHOLARSHIP_FOR_POSTGRADUATE_STUDIES_UGC_2324.pdf",
+    "official_doc_version": "Guidelines for National Scholarship for Postgraduate Studies (UGC; text says 2021; NSP file tagged 2023-24)",
+    "alt_doc_urls": [
+      {"url": "https://scholarships.gov.in/public/FAQ/FAQ_NSPG.pdf", "note": "FAQ (not fetched)"},
+      {"url": "https://scholarships.gov.in//public/schemeGuidelines/Guidelines_SGC1819.pdf", "note": "LEGACY PG Indira Gandhi Single Girl Child guidelines (2018-19) - merged; do NOT ingest as current"}
+    ],
+    "landing_url": "https://www.ugc.gov.in",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Readable with typos.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/Guidelines_NATIONAL_SCHOLARSHIP_FOR_POSTGRADUATE_STUDIES_UGC_2324.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": null, "note": "No income ceiling stated"},
+      "categories": {"value": ["any"], "note": "Slots follow GoI reservation policy"},
+      "gender": {"value": "any", "quote": "Single/twin/fraternal Girl Child", "quote_verbatim": true, "location": "p.2 Note: 30% women's slots filled first by single/twin/fraternal girl child without considering UG marks"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "All-India merit on UG marks (tie: Class XII); no minimum stated", "location": "p.2; p.4 2(v)"},
+      "course_levels": {"value": ["first PG degree, 1st year, regular/full-time"], "quote": "The scholarship is available to the students for the first PG Degree programme only.", "quote_verbatim": true, "location": "p.2 2(i)(1)"},
+      "age_limit": {"value": "below 30 years on date of admission", "quote": "Only students who are below the age of 30 years of age as on the date of admission", "quote_verbatim": true, "location": "p.2 2(i)(4)"},
+      "state_or_region": {"value": "All India; studies within India"},
+      "other_conditions": [
+        {"value": "10,000 scholarships; 50% for science/engg/medical/technical/agri/forestry; 30% for women", "quote": "Ten thousand (10000) National Scholarships or as may be decided by the Commission", "quote_verbatim": true, "location": "p.2; p.4"},
+        {"value": "Excluded: existing PG degree holders, ODL/private/part-time, holders of other scholarship/stipend unless relinquished", "location": "pp.2-3"}
+      ],
+      "benefit": {"value": "Rs 15,000/month for 10 months/yr for 2 years", "quote": "at the rate of Rs.15,000/- per month for 10 months in a year", "quote_verbatim": true, "location": "p.2"},
+      "renewal_conditions": {"value": "Good conduct, attendance, successful completion of 1st year; forfeit if not promoted", "quote": "subject to good conduct and maintenance of prescribed attendance", "quote_verbatim": true, "location": "p.5 4(I)-(IV)"},
+      "application_window": {"value": "NSP annual (2025-26 deadline was 15 Nov 2025 per news)"}
+    },
+    "notes": ["User asked for 'PG Indira Gandhi single girl child' - it no longer runs standalone; route single-girl-child queries to NSPG."]
+  },
+  {
+    "id": "nos-sc",
+    "name": "National Overseas Scholarship for SC etc. Candidates (NOS)",
+    "ministry_department": "Ministry of Social Justice & Empowerment, Department of Social Justice & Empowerment",
+    "levels": ["Master's (abroad)", "PhD (abroad)"],
+    "status": {"value": "active", "evidence": [{"text": "Guidelines 'Applicable from the year 2025-26'.", "source_url": "https://nosmsje.gov.in/nosmsje/public/images/Scheme-guidelines-2025-26.pdf"}]},
+    "official_doc_url": "https://nosmsje.gov.in/nosmsje/public/images/Scheme-guidelines-2025-26.pdf",
+    "official_doc_version": "National Overseas Scholarship for SC etc. Candidates, applicable from 2025-26",
+    "alt_doc_urls": [],
+    "landing_url": "https://nosmsje.gov.in",
+    "apply_url": "https://nosmsje.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Clean text.",
+    "recommended_ingest_url": "https://nosmsje.gov.in/nosmsje/public/images/Scheme-guidelines-2025-26.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "Gross annual family income from all sources shall not exceed Rs. 8.00 lakh per annum in the preceding financial year.", "quote_verbatim": true, "location": "Section 5"},
+      "categories": {"value": ["SC (115 awards)", "DNT/Nomadic/Semi-Nomadic (6)", "Landless Agricultural Labourers & Traditional Artisans (4)"], "location": "Section 2(b)-(c)"},
+      "gender": {"value": "any", "quote": "30% of the awards for each year shall be earmarked for women candidates.", "quote_verbatim": true, "location": "Section 2(f)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "60% or equivalent in qualifying exam", "quote": "at least 60% marks or equivalent grade in the qualifying examination would be required.", "quote_verbatim": true, "location": "Section 3"},
+      "course_levels": {"value": ["Master's abroad", "PhD abroad"], "quote": "Bachelors Level courses in any discipline are not covered under the Scheme.", "quote_verbatim": true, "location": "Sections 2(a), 2(g)"},
+      "age_limit": {"value": "<= 35 years on 1 April of selection year", "quote": "Not more than 35 (Thirty Five) years, as on first day of April for selection year.", "quote_verbatim": true, "location": "Section 4"},
+      "state_or_region": {"value": "Indian nationals; university must be in QS World top 500", "quote": "list of top 500 QS world ranked institutions/ universities", "quote_verbatim": true, "location": "Sections 2(i), 9(a)"},
+      "other_conditions": [
+        {"value": "Max two children of same parents", "quote": "Not more than two children of the same parents/guardians will be eligible for scholarship under the scheme.", "quote_verbatim": true, "location": "Section 7"},
+        {"value": "Not if already funded by other Central/State scholarship", "location": "Section 2(h)"},
+        {"value": "125 fresh awards per selection year, subject to funds", "quote": "In each Selection Year, 125 fresh awards, subject to availability of funds, will be given under the Scheme.", "quote_verbatim": true, "location": "Section 2(b)"}
+      ],
+      "benefit": {"value": "Tuition at actuals; maintenance USD 15,400/yr (GBP 9,900 UK); contingency USD 1,500 (GBP 1,100); visa fee; airfare reimbursed via Indian Mission", "location": "Section 13"},
+      "renewal_conditions": {"value": "Max duration: PhD 4 yrs, Master's 3 yrs", "quote": "Master's Degree -- 03 years (Three years)", "quote_verbatim": true, "location": "Section 14(i)", "note": "Progress-based continuation conditions not extracted"},
+      "application_window": {"value": "Two rounds: Feb/Mar and Sep/Oct, 40 days each + 4-day correction", "location": "Section 8(b)"}
+    },
+    "notes": []
+  },
+  {
+    "id": "depwd-scholarships-swd",
+    "name": "Scholarships for Students with Disabilities (Pre-Matric, Post-Matric, Top Class Education) - umbrella scheme",
+    "ministry_department": "Ministry of Social Justice & Empowerment, Department of Empowerment of Persons with Disabilities (DEPwD)",
+    "levels": ["pre-matric (Class IX-X)", "post-matric (Class XI to PG)", "Top Class: UG/PG degree/diploma at notified institutes"],
+    "status": {"value": "active", "evidence": [{"text": "OM dated 25 Sept 2024 revising scheme 'with immediate effect'; all three components listed on NSP (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf"}]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf",
+    "official_doc_version": "Central Sector Umbrella Scheme 'Scholarships for Students with Disabilities', OM File No. 3-06/2017-sch dated 25-09-2024",
+    "alt_doc_urls": [{"url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDFAQ.pdf", "note": "FAQ (not fetched)"}],
+    "landing_url": "https://scholarships.gov.in/All-Scholarships",
+    "apply_url": "https://scholarships.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Mostly readable; some split table cells; page numbers visible.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/DEPDGuidelines_1.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": {"pre_matric": 250000, "post_matric": 250000, "top_class": 800000}, "location": "Section 3 table, p.5", "quote_verbatim": false},
+      "categories": {"value": ["any (students with benchmark disability)"]},
+      "gender": {"value": "any", "note": "50% slots reserved for girls in each component (Section 3 table, p.5)"},
+      "disability": {"value": true, "quote": "open to students with benchmark disability i.e. 40% or more disability", "quote_verbatim": true, "location": "Section 2(ii), p.4"},
+      "min_marks": {"value": null, "note": "No minimum marks found"},
+      "course_levels": {"value": ["Pre: regular full-time Class IX/X", "Post: all recognised post-matric/post-secondary courses", "Top Class: graduate/PG degree/diploma at Institutes of Excellence (Annexure I)"], "quote": "admissible only for pursuing Graduate and Post graduate Degree/Diploma courses in Institutes of Excellence", "quote_verbatim": true, "location": "Sections 4.1, 5(a), 6.1"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [
+        {"value": "Max two children with disabilities of same parents (twins exempt)", "quote": "Not more than two children with disabilities of the same parents will be entitled to receive benefits", "quote_verbatim": true, "location": "Section 2(iv), p.4"},
+        {"value": "No other scholarship/stipend", "quote": "A scholarship holder under this scheme will not avail any other scholarship/stipend", "quote_verbatim": true, "location": "Section 2(vi), p.4"},
+        {"value": "Slots incl. renewals: Pre 25,000; Post 17,000; Top Class 300", "location": "Section 3 table, p.5"},
+        {"value": "Top Class not for distance/part-time/weekend; awarded only once in lifetime", "location": "Section 6.1, p.8"}
+      ],
+      "benefit": {"value": "Pre: Rs 800/500 per month (hosteller/day), disability allowance Rs 4,000 (VI/ID) or 2,000/yr, book grant Rs 1,000. Post: tuition up to Rs 1.40 lakh/yr + misc up to Rs 10,000, Rs 1,200/650 per month, disability allowance Rs 4,000/2,000, books Rs 1,500. Top Class: tuition up to Rs 1.90 lakh/yr + misc Rs 10,000, laptop Rs 45,000 and aids Rs 30,000 (one-time), Rs 3,000/1,500 per month, special allowance Rs 2,000/month, books Rs 5,000/yr", "quote": "Up to Rs. 1.40 lakh – per annum (subject to actual amount)", "quote_verbatim": true, "location": "Sections 4.2, 5(b), 6.2, pp.6-9"},
+      "renewal_conditions": {"value": "Renewed year to year within course duration; for second and later failures student bears own expenses", "quote": "For second and subsequent failure in any class, the student shall bear his/her own expenses", "quote_verbatim": true, "location": "Section 8, p.10"},
+      "application_window": {"value": "NSP annual cycle"}
+    },
+    "notes": ["Consider splitting into three records for retrieval (pre/post/top-class) - all share one source PDF."]
+  },
+  {
+    "id": "pms-st",
+    "name": "Post Matric Scholarship for Scheduled Tribe Students (PMS-ST)",
+    "ministry_department": "Ministry of Tribal Affairs (Centrally Sponsored; implemented by States/UTs)",
+    "levels": ["post-matric: Class XI-XII", "ITI/diploma", "UG", "PG", "M.Phil/PhD (Group I per 2010 regs)"],
+    "status": {"value": "active", "evidence": [
+      {"text": "Ministry of Tribal Affairs listed among central-sector departments on NSP 'allschemesdomicile' page (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/allschemesdomicile"},
+      {"text": "News (Jul 2025): Centre told Parliament it has no plan to scrap post-matric scholarships for SC/ST students.", "source_url": "https://news.careers360.com/no-plan-scrap-post-matric-scholarship-for-st-sc-students-centre/amp"}
+    ]},
+    "official_doc_url": "https://scholarships.gov.in/public/schemeGuidelines/EDUPostMatricScholarshipPMSforSTstudents.pdf",
+    "official_doc_version": "NSP-hosted summary; rules last revised w.e.f. 01.04.2013 (OUTDATED rates)",
+    "alt_doc_urls": [
+      {"url": "https://twd.tripura.gov.in/sites/default/files/Guidelines_5.pdf", "note": "MoTA regulations (from 01.07.2010) + 23 May 2013 letter raising ceiling to Rs 2.5 lakh; OCR text"},
+      {"url": "https://megeducation.gov.in/dhte/other_docs/guidelines/Guidelines%20for%20PostMatric%20Umbrella%20Scheme%20of%20scholarships%20for%20ST%20students.pdf", "note": "Meghalaya-hosted MoTA 2010 regulations (Rs 2 lakh ceiling)"},
+      {"url": "https://www.chowgules.ac.in/wp-content/uploads/2026/07/NSP-Scholarship-2026-27-Circular-and-Guidelines-for-ST-students.pdf", "note": "Most recent text found: MoTA 'Regulation Governing the Award of Scholarship' effective 01-04-2022 - but hosted on a COLLEGE site, not official; locate the original on tribal.nic.in / dbttribal.gov.in"}
+    ],
+    "landing_url": "https://tribal.nic.in",
+    "apply_url": "https://scholarships.gov.in or state portal (MoTA DBT portal: https://dbttribal.gov.in)",
+    "fetch_ok": true,
+    "fetch_notes": "NSP doc readable but table jumbled and content dated (2013). No official-domain copy of the 2022 regulation was found.",
+    "recommended_ingest_url": "https://scholarships.gov.in/public/schemeGuidelines/EDUPostMatricScholarshipPMSforSTstudents.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "parents'/guardians' income from all sources does not exceed Rs. 2.50 lakh per annum.", "quote_verbatim": true, "location": "PMS Eligibility section (NSP doc); same Rs 2.50 lakh in 2022 regulation"},
+      "categories": {"value": ["ST"], "quote": "Scheduled Tribe candidates who have passed the matriculation or higher secondary", "quote_verbatim": true, "location": "Eligibility"},
+      "gender": {"value": "any"},
+      "disability": {"value": "any", "note": "Reader/transport allowances for disabled scholars in 2010 regs"},
+      "min_marks": {"value": "No minimum; passed matric/higher secondary"},
+      "course_levels": {"value": ["Group I-IV (professional degree/PG ... to post-matric non-degree)"]},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "ST of the State/UT of permanent residence"},
+      "other_conditions": [
+        {"value": "No other scholarship/stipend", "quote": "The scholarship holder under this scheme will not hold any other scholarship/stipend.", "quote_verbatim": true, "location": "Eligibility"},
+        {"value": "Excluded training courses (e.g. Aircraft Maintenance Engineer)", "location": "Eligibility"}
+      ],
+      "benefit": {"value": "Fees (enrolment, tuition, games, union, library, magazine, medical exam) + maintenance allowance per month: Group I 1,200/550; II 820/530; III 570/300; IV 380/230 (hosteller/day scholar)", "location": "Benefits; table jumbled - verify", "quote_verbatim": false},
+      "renewal_conditions": {"value": "Tenable to course completion subject to good conduct, attendance, promotion; first failure in Group I may be renewed", "location": "2010 regs Section VII (Tripura copy)"},
+      "application_window": {"value": "State-specific; 2022 regulation suggests registration 1 Apr-30 Sep, institute verification by 30 Oct"}
+    },
+    "notes": ["User did not list this scheme but it is a major central scheme; rates likely outdated. Prioritise finding the official 2022+ MoTA regulation PDF on tribal.nic.in before ingesting."]
+  },
+  {
+    "id": "inspire-she",
+    "name": "INSPIRE Scholarship for Higher Education (SHE)",
+    "ministry_department": "Ministry of Science & Technology, Department of Science & Technology (DST)",
+    "levels": ["UG (B.Sc/BS)", "integrated M.Sc/MS"],
+    "status": {
+      "value": "paused / under redesign (no 2025 call issued as of Jul 2026)",
+      "evidence": [
+        {"text": "DST on X (quoted by Careers360, 16 Jul 2026): \"INSPIRE-SHE scheme is not scrapped. It is being redesigned currently. Hence, there has been a delay in announcing the call.\"", "source_url": "https://news.careers360.com/dst-clarifies-inspire-she-scholarship-not-scrapped-scheme-redesign-delay-2025-notification/amp"},
+        {"text": "Careers360 21 Jul 2026: notification for AY 2025-26 not yet released.", "source_url": "https://news.careers360.com/abvp-demands-inspire-she-2025-26-notification-pending-scholarship-funds-jitendra-singh/amp"}
+      ]
+    },
+    "official_doc_url": "https://online-inspire.gov.in/content/INSPIRE_Brochure.pdf",
+    "official_doc_version": "INSPIRE brochure (DST)",
+    "alt_doc_urls": [
+      {"url": "https://ubse.uk.gov.in/files/Call_for_Application_Inspire(SHE)_2024_NOTIFICATION_1.pdf", "note": "Copy of DST's SHE 2024 call hosted by Uttarakhand Board (official state domain); fetch_ok true; item (c) of eligibility missing in extraction"}
+    ],
+    "landing_url": "https://online-inspire.gov.in/Account/INSPIREProgramme",
+    "apply_url": "https://online-inspire.gov.in",
+    "fetch_ok": false,
+    "fetch_notes": "Brochure PDF and /Account/SHE blocked by robots.txt for WebFetch; INSPIREProgramme page readable; 2024 call readable via UBSE copy.",
+    "recommended_ingest_url": "https://ubse.uk.gov.in/files/Call_for_Application_Inspire(SHE)_2024_NOTIFICATION_1.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": null, "note": "No income criterion (merit-based)"},
+      "categories": {"value": ["any"]},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "Top 1% in Class XII board aggregate, or JEE/NEET rank within top 10,000, or NTSE/JBNSTS scholar or International Olympiad medallist; must have passed XII in the current year", "quote": "Meritorious Students with aggregate marks within top 1% of their Class XII examination of any State/ Central Board", "quote_verbatim": true, "location": "2024 call, Eligibility (a)"},
+      "course_levels": {"value": ["B.Sc", "B.S.", "B.Sc (Research, 4-yr)", "Int. M.Sc/M.S. in natural & basic sciences (18 subjects, Annexure-1)"]},
+      "age_limit": {"value": "17-22 years", "quote": "within the age group (17-22) years", "quote_verbatim": true, "location": "2024 call"},
+      "state_or_region": {"value": "All India"},
+      "other_conditions": [{"value": "Students who passed Class XII in previous years not considered", "quote": "STUDENTS WHO HAVE PASSED CLASS XII EXAMINATION IN PREVIOUS YEARS WILL NOT BE CONSIDERED", "quote_verbatim": true, "location": "2024 call"}],
+      "benefit": {"value": "Rs 5,000/month (Rs 60,000/yr) + mentorship grant Rs 20,000/yr = Rs 80,000/yr; 10,000 scholarships/yr", "location": "2024 call; INSPIREProgramme page", "quote_verbatim": false},
+      "renewal_conditions": {"value": null, "note": "Not confirmed from an accessible official source"},
+      "application_window": {"value": "Historically Sep-Oct (2024: 1 Sep-15 Oct 2024); 2025 call not issued as of Jul 2026"}
+    },
+    "notes": ["Do not tell users it is currently open. Eligibility may change after redesign."]
+  },
+  {
+    "id": "moma-minority-pre-post-mcm",
+    "name": "Pre-Matric, Post-Matric and Merit-cum-Means Scholarships for Minorities (Ministry of Minority Affairs)",
+    "ministry_department": "Ministry of Minority Affairs",
+    "levels": ["pre-matric (IX-X)", "post-matric", "UG/PG technical & professional (MCM)"],
+    "status": {
+      "value": "discontinued for fresh awards / not approved beyond 2021-22",
+      "evidence": [
+        {"text": "Lok Sabha USQ 1662 (10 Dec 2025): schemes 'had not been approved for implementation beyond 2021-22'; Pre-Matric coverage restricted to Classes IX-X.", "source_url": "https://eparlib.sansad.in/bitstream/123456789/3019088/1/AU1662_E60DrS.pdf"},
+        {"text": "Parliamentary panel ATR (reported 11 Aug 2025): \"neither any target is fixed nor could the scheme be implemented from 2022-23 onwards\".", "source_url": "https://www.deccanherald.com/amp/story/india%2Fparliament-panel-slams-minority-affairs-for-delay-in-scholarship-approvals-3676204"},
+        {"text": "Ministry of Minority Affairs absent from NSP central-department list (fetched 2026-10-10).", "source_url": "https://scholarships.gov.in/allschemesdomicile"}
+      ]
+    },
+    "official_doc_url": null,
+    "official_doc_version": null,
+    "alt_doc_urls": [],
+    "landing_url": "https://www.minorityaffairs.gov.in",
+    "apply_url": null,
+    "fetch_ok": null,
+    "fetch_notes": "No current guideline to ingest. Kept as a status record so the RAG can answer 'is X still available?' correctly.",
+    "recommended_ingest_url": null,
+    "eligibility": null,
+    "notes": ["Ingest the Lok Sabha answer (AU1662) as the citation for status, not old guidelines."]
+  },
+  {
+    "id": "begum-hazrat-mahal",
+    "name": "Begum Hazrat Mahal National Scholarship (for minority girls, Class IX-XII)",
+    "ministry_department": "Ministry of Minority Affairs / Maulana Azad Education Foundation (MAEF, closed)",
+    "levels": ["Class IX-XII"],
+    "status": {
+      "value": "discontinued (subsumed into minority Pre/Post-Matric from 2022-23; MAEF closed Feb 2024)",
+      "evidence": [
+        {"text": "Lok Sabha USQ 2590 (11 Dec 2024): scheme 'has been subsumed with Pre-Matric (for class IX-X)' and Post-Matric (XI-XII) from 2022-23.", "source_url": "https://eparlib.sansad.in/bitstream/123456789/2985510/1/AU2590_ol1Z4J.pdf"},
+        {"text": "Lok Sabha USQ 987 (08 Feb 2024): \"There is no such proposal to extend the said Scheme.\"", "source_url": "https://eparlib.nic.in/bitstream/123456789/2974364/1/AU987.pdf"},
+        {"text": "News: MoMA order of 7 Feb 2024 closed MAEF; Delhi HC dismissed challenge 16 Apr 2024.", "source_url": "https://sabrangindia.in/delhi-high-court-dismisses-petition-challenging-closure-of-the-maulana-azad-education-foundation"}
+      ]
+    },
+    "official_doc_url": null,
+    "official_doc_version": null,
+    "alt_doc_urls": [],
+    "landing_url": null,
+    "apply_url": null,
+    "fetch_ok": null,
+    "fetch_notes": "Status record only. Note that the schemes it was merged into are themselves not approved beyond 2021-22.",
+    "recommended_ingest_url": null,
+    "eligibility": null,
+    "notes": []
+  },
+  {
+    "id": "wb-svmcm",
+    "name": "Swami Vivekananda Merit-cum-Means Scholarship (SVMCM), West Bengal",
+    "ministry_department": "Government of West Bengal, Higher Education Department",
+    "levels": ["Higher Secondary (XI-XII)", "UG", "PG", "diploma/polytechnic", "M.Phil/PhD"],
+    "status": {"value": "active (probable)", "evidence": [{"text": "SVMCM portal live with current institution notices (home page fetched 2026-10-10); no official 2026-27 notice text retrieved.", "source_url": "https://svmcm.wbhed.gov.in/"}]},
+    "official_doc_url": "https://banglaruchchashiksha.wb.gov.in/uploads/webmaster/3f83da4f10b5e8aeef9992b6bb23c4a9.PDF",
+    "official_doc_version": "WB HED order No. 35-Edn(B)/HE/N/M&MS-03/2021 (date OCR'd as 17-11-2021, uncertain) lowering qualifying marks to 60%",
+    "alt_doc_urls": [
+      {"url": "https://wbtetsd.gov.in/files/public/publications/notice/1537949376.pdf", "note": "Official 2018 notice (Higher Education, S&T & Biotech Dept); readable; OUTDATED marks thresholds (75%)"},
+      {"url": "https://rrrmahavidyalaya.edu.in/uploads/SVMCM_GUIDELINES.pdf", "note": "Most complete recent guidelines text (amount table, renewal) but hosted on a college site - not official"}
+    ],
+    "landing_url": "https://svmcm.wbhed.gov.in",
+    "apply_url": "https://svmcm.wbhed.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Official 2021 order is scanned with partial OCR (key ceiling sentence legible; amounts absent). Portal sub-pages blocked by robots.txt. No good official full-text guideline found.",
+    "recommended_ingest_url": "https://banglaruchchashiksha.wb.gov.in/uploads/webmaster/3f83da4f10b5e8aeef9992b6bb23c4a9.PDF",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 250000, "quote": "whose family income is not more than Rs.2,50,000/- per annum.", "quote_verbatim": true, "location": "2021 order, p.1"},
+      "categories": {"value": ["any"]},
+      "gender": {"value": "any"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": "60% aggregate in last qualifying exam (from FY 2021-22; e.g. Madhyamik for HS level); PG thresholds 53%/55% per college-hosted guidelines (unverified)", "quote": "for the financial year 2021-22 for the students who have scored 60% and above in aggregate in Madhyamik Pariksha for Higher Secondary Level", "quote_verbatim": true, "location": "2021 order, p.1 (OCR)"},
+      "course_levels": {"value": ["HS", "UG", "PG", "polytechnic", "M.Phil/PhD (non-NET)"]},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "Resident of West Bengal studying in WB institutions", "location": "2018 notice"},
+      "other_conditions": [{"value": "Kanyashree K-3 applicants exempt from income certificate", "location": "2018 notice"}],
+      "benefit": {"value": null, "note": "Official amounts not confirmed. College-hosted guidelines list Rs 1,000-8,000/month by level (e.g. UG Arts Rs 1,000, UG Science Rs 1,500, Engineering Rs 5,000, PhD Rs 8,000). Verify before use."},
+      "renewal_conditions": {"value": "Renewal on good academic performance: >=60% (HS to UG/diploma), >=50% (PG); apply within one month of admission to next class", "location": "2018 notice (official)"},
+      "application_window": {"value": null, "note": "Not confirmed for 2026-27"}
+    },
+    "notes": ["Weakest official sourcing of all entries. Recommend manually downloading the current guideline from svmcm.wbhed.gov.in (robots-blocked for the fetch tool only)."]
+  },
+  {
+    "id": "mh-rajarshi-shahu-ebc-fee",
+    "name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti Yojana (EBC fee scholarship) incl. 100% fee concession for girls (Maharashtra)",
+    "ministry_department": "Government of Maharashtra, Higher & Technical Education Department (DTE/DHE/DMER via MahaDBT)",
+    "levels": ["UG/PG professional courses admitted via CAP"],
+    "status": {"value": "active", "evidence": [{"text": "GR dated 08 July 2024 extends 100% tuition & exam fee concession for eligible girls from AY 2024-25; scheme listed on MahaDBT (fetched 2026-10-10).", "source_url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202407091429374008.pdf"}]},
+    "official_doc_url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202407091429374008.pdf",
+    "official_doc_version": "GR No. शिष्यवृ-2024/प्र.क्र.105/तांशि-4 dated 08-07-2024 (unique code 202407091429374008), Marathi",
+    "alt_doc_urls": [
+      {"url": "https://mahadbt.maharashtra.gov.in/", "note": "Portal; scheme-detail pages error/JS; base GRs cited by colleges: 07-10-2017, 01-03-2018, 31-03-2018, 11-07-2019 (not located on gr.maharashtra.gov.in)"}
+    ],
+    "landing_url": "https://mahadbt.maharashtra.gov.in",
+    "apply_url": "https://mahadbt.maharashtra.gov.in",
+    "fetch_ok": true,
+    "fetch_notes": "Marathi text layer readable with some character-spacing errors. English source is only college notices (unofficial).",
+    "recommended_ingest_url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202407091429374008.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": 800000, "quote": "वार्षिक कौटुंबिक उत्पन्न रु.8.00 लाखापेक्षा कमी", "quote_verbatim": false, "location": "GR 08-07-2024 (OCR'd as 'वार्थषक कौटुंयर्क उत्पन्न रु.8.00 लाखापेक्षा कमी')", "note": "'less than Rs 8 lakh' in GR; college notices say 'not more than 8 Lakhs'"},
+      "categories": {"value": ["EWS", "SEBC", "OBC girls (100%)", "EBC/open (base scheme, 50%)", "orphans (institutional/non-institutional, boys & girls)"]},
+      "gender": {"value": "any (100% concession for girls; 50% for boys under base scheme)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": null},
+      "course_levels": {"value": ["recognised professional courses via CAP; not management quota; not private deemed/self-financing universities"]},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "Maharashtra domicile; institutions in Maharashtra"},
+      "other_conditions": [
+        {"value": "Max 2 children per family; no other scholarship; >=50% attendance previous semester; gap < 2 years", "location": "College-hosted MahaDBT scheme text (unofficial)"},
+        {"value": "Benefit once granted continues to course end without yearly income certificate", "location": "GR 08-07-2024"}
+      ],
+      "benefit": {"value": "Tuition + exam fee concession: 100% for eligible girls (from 2024-25), otherwise 50%", "quote": "शिक्षण शुल्क व परीक्षा शुल्काच्या 50 टक्के ऐवजी 100 टक्के लाभ", "quote_verbatim": false, "location": "GR 08-07-2024 (OCR-normalised)"},
+      "renewal_conditions": {"value": "Applies to new and renewing students; renewal via MahaDBT"},
+      "application_window": {"value": null, "note": "MahaDBT annual window; dates not confirmed"}
+    },
+    "notes": ["The GR is an amendment; the base scheme GRs (2017-2019) were not located on an official domain. Marathi source - your pipeline may need translation."]
+  },
+  {
+    "id": "tn-pudhumai-penn",
+    "name": "Pudhumai Penn - Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme (Tamil Nadu)",
+    "ministry_department": "Government of Tamil Nadu (Social Welfare & Women Empowerment Department)",
+    "levels": ["UG", "diploma", "ITI"],
+    "status": {"value": "active", "evidence": [
+      {"text": "TN Govt press release (Jul 2023): launched Sep 2022/Feb 2023; Rs 349.78 crore for 2023-24.", "source_url": "https://kygcms.tn.gov.in/cms_migrated/document/press_release/pr290723_e_1513.pdf"},
+      {"text": "News: extended to girls of government-aided schools (Dec 2024) and to transgender/intersex persons (Jun 2025).", "source_url": "https://www.dinamalar.com/news/kalvimalar-news-en/tn-govt-includes-third-gender-in-pudhumai-penn-tamil-pudhalvan-schemes/56057"}
+    ]},
+    "official_doc_url": "https://kygcms.tn.gov.in/cms_migrated/document/press_release/pr290723_e_1513.pdf",
+    "official_doc_version": "TN Government press release PR 290723 (29 Jul 2023) - not the G.O.",
+    "alt_doc_urls": [],
+    "landing_url": "https://pudhumaipenn.tn.gov.in",
+    "apply_url": "https://pudhumaipenn.tn.gov.in (via college nodal officer)",
+    "fetch_ok": true,
+    "fetch_notes": "Press release is clean English text. No G.O. PDF found on an official domain.",
+    "recommended_ingest_url": "https://kygcms.tn.gov.in/cms_migrated/document/press_release/pr290723_e_1513.pdf",
+    "eligibility": {
+      "income_ceiling_inr": {"value": null, "note": "No income criterion stated"},
+      "categories": {"value": ["any"]},
+      "gender": {"value": "female (extended to transgender/intersex persons in 2025 per news)"},
+      "disability": {"value": "any"},
+      "min_marks": {"value": null},
+      "course_levels": {"value": ["UG degree", "diploma", "ITI"], "note": "Arts & science first 3 yrs, engineering first 4, medical first 5; internships excluded"},
+      "age_limit": {"value": null},
+      "state_or_region": {"value": "Studied Classes 6-12 in Tamil Nadu Government schools (RTE private seats in 6-8 allowed if IX-XII in Govt school); extended to Govt-aided schools from Dec 2024 (news)", "quote": "All girl students who studied from Classes 6 to 12 in Government schools will be paid Rs.1,000/- per month", "quote_verbatim": true, "location": "Press release"},
+      "other_conditions": [
+        {"value": "Distance education & unrecognised institutions excluded; may receive other scholarships concurrently", "location": "Press release"}
+      ],
+      "benefit": {"value": "Rs 1,000 per month by DBT until course completion", "quote": "Rs.1,000/- per month", "quote_verbatim": true, "location": "Press release"},
+      "renewal_conditions": {"value": null},
+      "application_window": {"value": "Register through college nodal officer on portal; no fixed window confirmed"}
+    },
+    "notes": ["A 2024 news article says the original scheme was for Tamil-medium Govt school girls; the official press release does not mention Tamil medium (that condition applies to Tamil Pudhalvan). Treat Tamil-medium as unconfirmed for Pudhumai Penn."]
+  }
+]
