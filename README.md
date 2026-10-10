@@ -10,7 +10,7 @@ PDFs. ScholarSathi does two things:
    scholarship?"* The answer is written only from passages retrieved from the official PDFs, cites the clause and page
    for every point, and says so when the documents don't cover the question.
 
-**Live demo:** _add your Render URL here after deploying_
+**Live demo:** https://scholarsathi.onrender.com (free hosting: the first visit after a quiet spell takes up to a minute to wake up)
 
 <img src="docs/screenshots/results.webp" alt="Eligibility results: schemes you qualify for, with each rule ticked and linked to its source clause">
 
@@ -92,16 +92,20 @@ python -m app.cli eval --answers  # + found rate and verified-citation rate of g
 
 On a deployed instance: `GET /api/admin/eval` with header `X-Admin-Token`.
 
-Measured on the 15 official PDFs that downloaded (753 passages), keyword search only, no API key. Questions about
-the 6 documents that couldn't be fetched are skipped, leaving 29:
+Measured on the live deployment: 15 official PDFs that downloaded (753 passages). Questions about the 6 documents that
+couldn't be fetched are skipped, leaving 29.
 
-| Metric (29 questions, k=6) | Keyword only |
-|---|---|
-| Scheme hit@1 | 0.97 |
-| Scheme hit@3 | 1.00 |
-| MRR | 0.98 |
-| Key-phrase recall@6 | 0.76 |
-| Search latency | ~6 ms |
+| Metric (29 questions, k=6) | Keyword only | Hybrid (keyword + Gemini embeddings) |
+|---|---|---|
+| Right scheme ranked first (hit@1) | 0.97 | 0.97 |
+| Right scheme in top 6 (hit@6) | 1.00 | 1.00 |
+| MRR | 0.98 | 0.97 |
+| Key phrase present in retrieved text (recall@6) | 0.76 | **0.97** |
+| Search latency | ~6 ms | ~460 ms (includes the embedding call) |
+
+Keyword search already finds the right scheme. Adding embeddings matters for the text: it pulls in the passage that
+actually contains the answer (for example the clause on how many children of one family can claim), which keyword
+search often misses when the student's wording differs from the guideline's.
 
 ## Sources
 
