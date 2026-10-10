@@ -36,24 +36,26 @@ def document_by_id() -> dict[str, dict[str, Any]]:
 # Names people actually type, mapped to scheme ids. Used to focus retrieval on the scheme asked about.
 ALIASES: dict[str, list[str]] = {
     "pm-usp-csss": ["csss", "central sector scheme", "central sector scholarship", "pm-usp", "pm usp"],
-    "pms-sc": ["post matric sc", "post-matric sc", "scheduled caste post", "pms-sc", "pms sc"],
-    "pm-yasasvi-pms-obc-ebc-dnt": ["yasasvi post", "obc post matric", "post-matric obc", "post matric obc", "ebc", "dnt"],
+    "pms-sc": ["post matric sc", "post-matric sc", "sc post matric", "sc post-matric", "sc student", "sc students",
+               "for sc", "scheduled caste", "pms-sc", "pms sc"],
+    "pm-yasasvi-pms-obc-ebc-dnt": ["yasasvi post", "obc post matric", "post-matric obc", "post matric obc", "obc post-matric", "ebc", "dnt"],
     "pm-yasasvi-top-class-school": ["top class school", "yasasvi school"],
     "pm-yasasvi-top-class-college": ["top class college", "yasasvi college"],
     "top-class-education-sc": ["top class education for sc", "top class sc", "tces"],
     "nmmss": ["nmmss", "nmms", "means-cum-merit", "means cum merit"],
     "aicte-pragati": ["pragati"],
     "aicte-saksham": ["saksham"],
-    "aicte-swanath": ["swanath"],
+    "aicte-swanath": ["swanath", "covid", "orphan"],
     "pmss-mha-capf-ar-state-police": ["capf", "assam rifles", "pmss mha", "central armed police", "state police"],
     "pmss-ksb-ex-servicemen": ["ksb", "kendriya sainik", "ex-servicemen", "ex servicemen", "ex-serviceman"],
     "ugc-ishan-uday": ["ishan uday", "ishan", "north east", "north-east", "northeast"],
     "ugc-nspg": ["nspg", "single girl child", "indira gandhi", "post graduate studies", "postgraduate scholarship"],
     "nos-sc": ["overseas", "national overseas", "study abroad", "abroad"],
-    "depwd-pre-matric": ["disabilit", "divyang", "pwd", "benchmark disability"],
-    "depwd-post-matric": ["disabilit", "divyang", "pwd", "benchmark disability"],
-    "depwd-top-class": ["disabilit", "divyang", "pwd"],
-    "pms-st": ["scheduled tribe", "post matric st", "post-matric st", "tribal"],
+    "depwd-pre-matric": ["disability", "disabilities", "disabled", "divyang", "pwd", "benchmark disability"],
+    "depwd-post-matric": ["disability", "disabilities", "disabled", "divyang", "pwd", "benchmark disability"],
+    "depwd-top-class": ["disability", "disabilities", "disabled", "divyang", "pwd"],
+    "pms-st": ["scheduled tribe", "post matric st", "post-matric st", "st post matric", "st post-matric", "tribal",
+               "st student", "st students", "for st"],
     "inspire-she": ["inspire", "she scholarship"],
     "tn-pudhumai-penn": ["pudhumai", "tamil nadu"],
     "moma-minority-scholarships": ["minority", "merit-cum-means", "merit cum means", "maulana azad"],
@@ -62,17 +64,25 @@ ALIASES: dict[str, list[str]] = {
 
 
 def mentioned_schemes(text: str) -> list[str]:
-    """Scheme ids whose names or aliases appear in the text (whole-word match, case-insensitive)."""
+    """Scheme ids whose names or aliases appear in the text (whole-word match, case-insensitive).
+
+    A generic alias loses to a longer, more specific one covering the same words:
+    "top class education for SC students" means TCES, not every scheme "for SC".
+    """
     t = " " + re.sub(r"\s+", " ", text.lower()) + " "
-    found: list[str] = []
+    spans: dict[str, list[tuple[int, int]]] = {}
     for sid, names in ALIASES.items():
         sch = scheme_by_id().get(sid)
         candidates = list(names) + ([sch["short"].lower()] if sch else [])
         for n in candidates:
-            if re.search(r"(?<![a-z])" + re.escape(n), t):
-                found.append(sid)
-                break
-    return found
+            for m in re.finditer(r"(?<![a-z])" + re.escape(n) + r"(?![a-z])", t):
+                spans.setdefault(sid, []).append(m.span())
+
+    def beaten(sid: str, a: int, b: int) -> bool:
+        return any(c < b and a < d and (d - c) > (b - a)
+                   for other, ss in spans.items() if other != sid for c, d in ss)
+
+    return [sid for sid, ss in spans.items() if not all(beaten(sid, a, b) for a, b in ss)]
 
 
 def public_scheme(s: dict[str, Any]) -> dict[str, Any]:

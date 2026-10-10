@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+import time
 import ssl
 from dataclasses import dataclass, field
 
@@ -158,9 +159,10 @@ def ingest_all(force: bool = False, embedder: Embedder | None = None, only: list
     return report
 
 
-def embed_missing(embedder: Embedder, batch: int = 100) -> int:
-    """Add vectors to passages stored before an API key was configured."""
-    total = 0
+def embed_missing(embedder: Embedder, batch: int = 50, max_failures: int = 15, pause: float = 65) -> int:
+    """Add vectors to passages stored without one (no API key yet, or the free-tier
+    per-minute quota ran out mid-ingest). Waits out quota errors instead of giving up."""
+    total, failures = 0, 0
     while True:
         with pool().connection() as conn:
             rows = conn.execute(
@@ -170,9 +172,15 @@ def embed_missing(embedder: Embedder, batch: int = 100) -> int:
             return total
         try:
             vecs = embedder.embed([f"{r['section']}\n{r['text']}" for r in rows])
+            failures = 0
         except Exception as e:
-            log.warning("could not embed stored passages: %s", e)
-            return total
+            failures += 1
+            if failures >= max_failures:
+                log.warning("could not embed stored passages, giving up for now: %s", e)
+                return total
+            log.warning("embedding paused (%s); retrying in %.0fs (%d left to embed)", e, pause, len(rows))
+            time.sleep(pause)
+            continue
         with pool().connection() as conn, conn.transaction():
             with conn.cursor() as cur:
                 cur.executemany("UPDATE chunks SET embedding = %s WHERE id = %s",

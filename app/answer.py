@@ -107,11 +107,11 @@ _ABBR = r"(?<!\bRs)(?<!\bNo)(?<!\bDr)(?<!\bSr)(?<!\bviz)(?<!\bi\.e)(?<!\be\.g)"
 
 def _sentences(text: str) -> list[str]:
     """Split guideline text into sentences/clauses without breaking at 'Rs.' or clause numbers."""
-    parts = re.split(_ABBR + r"(?<=[.;])\s+(?=[A-Z(])|\s(?=\([ivx]{1,4}\)|\(\d{1,2}\)\s)", text)
+    parts = re.split(_ABBR + r"(?<=[.;])\s+(?=[A-Z(])|\s(?=\([ivx]{1,4}\)|\(\d{1,2}\)\s)|\s*[•▪●]\s*", text)
     return [s.strip() for s in parts if 25 <= len(s.strip()) <= 400]
 
 
-_HOW_MUCH = re.compile(r"how much|amount|money|limit|ceiling|income|percent|marks|age|rs|₹|lakh", re.I)
+_HOW_MUCH = re.compile(r"\b(how much|amount|money|limit|ceiling|income|percent(age)?|marks|age|rs)\b|₹|lakh", re.I)
 
 
 def _sentence_score(sentence: str, qwords: set[str], wants_number: bool) -> float:
@@ -134,13 +134,14 @@ def extractive_answer(question: str, hits: list[Hit]) -> dict[str, Any]:
     wants_number = bool(_HOW_MUCH.search(question))
     focus = set(mentioned_schemes(question))
     candidates = [(i, h) for i, h in enumerate(hits[:5]) if not focus or focus & set(h.scheme_ids)] or list(enumerate(hits[:4]))
-    picked = []
+    # Best sentence from each passage, then the strongest three overall (ties keep search order).
+    best = []
     for i, h in candidates:
         sents = sorted(_sentences(h.text), key=lambda s: -_sentence_score(s, qwords, wants_number))
         if sents and _sentence_score(sents[0], qwords, wants_number) >= 1.5:
-            picked.append((i, sents[0]))
-        if len(picked) == 3:
-            break
+            best.append((_sentence_score(sents[0], qwords, wants_number), i, sents[0]))
+    best.sort(key=lambda x: (-x[0], x[1]))
+    picked = [(i, s) for _, i, s in best[:3]]
     if not picked:
         return {"answer": "I couldn't find this in the official documents I have.", "found": False,
                 "citations": [_citation(i, h, None) for i, h in enumerate(hits[:3])], "mode": "extractive"}

@@ -126,3 +126,25 @@ def test_non_pdf_response_for_pdf_url_is_rejected(fresh_db):
     r = IngestReport()
     ingest_document(document_by_id()["nos-2526"], None, r, data=b"<!doctype html><html><body>Access denied</body></html>")
     assert "nos-2526" in r.failed
+
+
+def test_embed_missing_waits_out_quota_errors(indexed):
+    from app.db import pool
+    from app.ingest.pipeline import embed_missing
+    from app.llm import HashEmbedder, LLMError
+
+    with pool().connection() as conn:
+        conn.execute("UPDATE chunks SET embedding = NULL WHERE id IN (SELECT id FROM chunks ORDER BY id LIMIT 3)")
+
+    class Flaky(HashEmbedder):
+        calls = 0
+
+        def embed(self, texts, *, query=False):
+            Flaky.calls += 1
+            if Flaky.calls == 1:
+                raise LLMError("429 quota")
+            return super().embed(texts, query=query)
+
+    assert embed_missing(Flaky(), pause=0) == 3
+    with pool().connection() as conn:
+        assert conn.execute("SELECT count(*) AS n FROM chunks WHERE embedding IS NULL").fetchone()["n"] == 0

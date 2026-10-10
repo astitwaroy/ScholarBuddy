@@ -92,12 +92,16 @@ python -m app.cli eval --answers  # + found rate and verified-citation rate of g
 
 On a deployed instance: `GET /api/admin/eval` with header `X-Admin-Token`.
 
-| Metric (38 questions, k=6) | Keyword only | Hybrid |
-|---|---|---|
-| Scheme hit@1 | _run after ingest_ | _run after ingest_ |
-| Scheme hit@6 | | |
-| Key-phrase recall@6 | | |
-| Verified citation rate | | |
+Measured on the 15 official PDFs that downloaded (753 passages), keyword search only, no API key. Questions about
+the 6 documents that couldn't be fetched are skipped, leaving 29:
+
+| Metric (29 questions, k=6) | Keyword only |
+|---|---|
+| Scheme hit@1 | 0.97 |
+| Scheme hit@3 | 1.00 |
+| MRR | 0.98 |
+| Key-phrase recall@6 | 0.76 |
+| Search latency | ~6 ms |
 
 ## Sources
 

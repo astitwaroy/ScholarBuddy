@@ -13,7 +13,7 @@ import argparse
 import json
 import logging
 
-from .db import migrate
+from .db import close_pool, migrate
 
 
 def main() -> None:
@@ -33,6 +33,13 @@ def main() -> None:
     a = p.parse_args()
 
     migrate()
+    try:
+        _run(a)
+    finally:
+        close_pool()
+
+
+def _run(a: argparse.Namespace) -> None:
     if a.cmd == "ingest":
         from .ingest.pipeline import ingest_all
 
